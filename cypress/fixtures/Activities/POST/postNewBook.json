@@ -1,0 +1,19 @@
+{
+    "sendSuccess": {
+        "statusCode": 200,
+        "body": {
+            "id": 0,
+            "title": "Test one",
+            "dueDate": "2022-04-11T21:14:17.640Z",
+            "completed": true
+        },
+        "responseHeaders": {
+            "access-control-allow-origin": "*",
+            "api-supported-versions": 1.0,
+            "content-type": "application/json; charset=utf-8; v=1.0", 
+            "date": "Mon11 Apr 2022 21:14:27 GMT",
+            "server": "Kestrel",
+            "transfer-encoding": "chunked" 
+        }
+    }
+}

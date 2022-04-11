@@ -1,0 +1,16 @@
+{
+    "sendSuccess": {
+        "statusCode": 200,
+        "id": 1,
+        "responseHeaders": {
+            "api-supported-versions": 1.0,
+            "content-type": "application/json; charset=utf-8; v=1.0",
+            "date": "Sat09 Apr 2022 04:28:18 GMT",
+            "server": "Kestrel",
+            "transfer-encoding": "chunked" 
+        }
+    },
+    "sendNotSuccess": {
+        "statusCode": 400
+    }
+}

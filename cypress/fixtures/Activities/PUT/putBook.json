@@ -1,0 +1,18 @@
+{
+    "sendSuccess": {
+        "statusCode": 200,
+        "id": 1,
+        "bodyNotPut": {
+            "id": 1,
+            "title": "Activity 1",
+            "dueDate": "2022-04-11T22:40:34.4074165+00:00",
+            "completed": false
+        },
+        "body": {
+            "id": 1,
+            "title": "string",
+            "dueDate": "2022-04-11T21:29:00.672Z",
+            "completed": true
+        }
+    }
+}
