@@ -9,7 +9,7 @@ on:
 
 jobs:
 
-  ui-chrome-tests:
+  tests-api:
     runs-on: ubuntu-latest
     container: cypress/browsers:node14.17.0-chrome88-ff89
     strategy:
@@ -21,9 +21,9 @@ jobs:
       - name: 'Automation Tests - Back end'
         uses: cypress-io/github-action@v2
         with:
-          install-command: yarn install
+          install-command: npm install
           wait-on: ${{ secrets.BASE_URL }}
-          wait-on-timeout: 120
+          wait-on-timeout: 60
           browser: chrome
           record: true
           group: 'Back end - Tests'
