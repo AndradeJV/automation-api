@@ -1,7 +1,7 @@
-import Activities from "../../requests/Activities.request";
+import Activities from "../requests/Activities.request";
 
-const payloadAllActivities = require("../../fixtures/Activities/GET/listAllActivities.json");
-const payloadActivity = require("../../fixtures/Activities/GET/Activity.json");
+const payloadAllActivities = require("../fixtures/Activities/GET/listAllActivities.json");
+const payloadActivity = require("../fixtures/Activities/GET/Activity.json");
 
 
 describe('GET - Endpoint Activities', () => {

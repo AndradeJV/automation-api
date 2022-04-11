@@ -1,5 +1,5 @@
-import Activities from "../../requests/Activities.request";
-const payload = require("../../fixtures/Activities/POST/postNewBook.json");
+import Activities from "../requests/Activities.request";
+const payload = require("../fixtures/Activities/POST/postNewBook.json");
 
 
 describe("POST - Endpoint Activities", () => {
