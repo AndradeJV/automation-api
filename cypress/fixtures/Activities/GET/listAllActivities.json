@@ -1,0 +1,35 @@
+{
+    "success": {
+        "statusCode": 200,
+        "responseBody": {
+            "id": 1,
+            "title": "Activity 1",
+            "dueDate": "2022-04-09T05:28:18.9571082+00:00",
+            "completed": false
+        },
+        "responseHeaders": {
+            "api-supported-versions": 1.0,
+            "content-type": "application/json; charset=utf-8; v=1.0",
+            "date": "Sat09 Apr 2022 04:28:18 GMT",
+            "server": "Kestrel",
+            "transfer-encoding": "chunked" 
+        }
+    },
+
+    "notSuccess": {
+        "statusCode": 400,
+        "responseBody": {
+            "id": 1,
+            "title": "Activityrwd 1",
+            "dueDate": "2022-04-028:18.9571082+00:00",
+            "completed": true
+        },
+        "responseHeaders": {
+            "api-supported-versions": 1.0,
+            "content-type": "alication/json; charset=utf-8; v=1.0",
+            "date": "Sat0 2022 04:28:18 GMT",
+            "server": "Kerel",
+            "transfer-encoding": "chu" 
+        }
+    }
+}

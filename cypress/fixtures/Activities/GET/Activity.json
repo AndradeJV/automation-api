@@ -1,0 +1,17 @@
+{
+    "success": {
+        "statusCode": 200,
+        "responseBody10": {
+            "id": 10,
+            "title": "Activity 10",
+            "dueDate": "2022-04-09T15:21:04.4453802+00:00",
+            "completed": true
+        },
+        "responseBody15": {
+            "id": 15,
+            "title": "Activity 15",
+            "dueDate": "2022-04-09T20:20:10.0962291+00:00",
+            "completed": false
+        }
+    }
+}
