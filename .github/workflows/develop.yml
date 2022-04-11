@@ -18,7 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       
-      - name: 'UI Tests - Chrome'
+      - name: 'Automation Tests - Back end'
         uses: cypress-io/github-action@v2
         with:
           install-command: yarn install
@@ -26,8 +26,8 @@ jobs:
           wait-on-timeout: 120
           browser: chrome
           record: true
-          group: 'UI - Chrome'
-          spec: cypress/integration/*
+          group: 'Back end - Tests'
+          spec: npm run cypress:run
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
