@@ -8,25 +8,20 @@ on:
     - cron: '0 15 * * *'
 
 jobs:
-
-  tests-api:
+  cypress-run:
     runs-on: ubuntu-latest
-    container: cypress/browsers:node14.17.0-chrome88-ff89
-    strategy:
-      fail-fast: false
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      
-      - name: 'Automation Tests - Back end'
+      - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          install-command: npm install
           wait-on-timeout: 60
           browser: chrome
           record: true
           group: 'Back end - Tests'
-          spec: npm run cypress:run
+          build: npm install
+          start: npm run cypress:run
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
