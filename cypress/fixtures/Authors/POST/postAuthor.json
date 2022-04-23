@@ -1,0 +1,17 @@
+{
+    "success": {
+        "statusCode": 200,
+        "payload": {
+            "id": 0,
+            "idBook": 0,
+            "firstName": "string",
+            "lastName": "string"
+        },
+        "response": {
+            "id": 0,
+            "idBook": 0,
+            "firstName": "string",
+            "lastName": "string"
+        }
+    }
+}
