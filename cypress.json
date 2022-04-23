@@ -1,4 +1,5 @@
 {
     "baseUrl": "https://fakerestapi.azurewebsites.net/api/v1/",
-    "projectId": "x4byzp"
+    "projectId": "x4byzp",
+    "video": false
 }
