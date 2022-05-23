@@ -5,7 +5,7 @@ class Authors {
     getAllAuthors(){
         return cy.request({
             method: 'GET',
-            url: 'Authors',
+            url: `${Cypress.env('fakerRestApi')}/Authors`,
             failOnStatusCode: false
         });
     }
@@ -13,7 +13,7 @@ class Authors {
     postAAuthor(payload){
         return cy.request({
             method: 'POST',
-            url: 'Authors',
+            url: `${Cypress.env('fakerRestApi')}/Authors`,
             failOnStatusCode: false,
             body: payload
         });
@@ -22,7 +22,7 @@ class Authors {
     getBookOfAuthors(idBook){
         return cy.request({
             method: 'GET',
-            url: `Authors/authors/books/${idBook}`,
+            url: `${Cypress.env('fakerRestApi')}/Authors/authors/books/${idBook}`,
             failOnStatusCode: false
         });
     }
@@ -30,7 +30,7 @@ class Authors {
     getAuthor(idAuthor){
         return cy.request({
             method: 'GET',
-            url: `Authors/${idAuthor}`,
+            url: `${Cypress.env('fakerRestApi')}/Authors/${idAuthor}`,
             failOnStatusCode: false
         });
     }
@@ -38,7 +38,7 @@ class Authors {
     putAAuthor(idAuthor, payload){
         return cy.request({
             method: 'PUT',
-            url: `Authors/${idAuthor}`,
+            url: `${Cypress.env('fakerRestApi')}/Authors/${idAuthor}`,
             failOnStatusCode: false,
             body: payload
         });
@@ -47,7 +47,7 @@ class Authors {
     deleteAAuthor(idAuthor){
         return cy.request({
             method: 'DELETE',
-            url: `Authors/${idAuthor}`,
+            url: `${Cypress.env('fakerRestApi')}/Authors/${idAuthor}`,
             failOnStatusCode: false
         });
     }

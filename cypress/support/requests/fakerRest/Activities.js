@@ -5,7 +5,7 @@ class Activities {
     getAllActivities(){
         return cy.request({
             method: 'GET',
-            url: 'Activities',
+            url: `${Cypress.env('fakerRestApi')}/Activities`,
             failOnStatusCode: false 
         });
     }
@@ -13,7 +13,7 @@ class Activities {
     getActivity(idActivity){
         return cy.request({
             method: 'GET',
-            url: `Activities/${idActivity}`,
+            url: `${Cypress.env('fakerRestApi')}/Activities/${idActivity}`,
             failOnStatusCode: false
         });
     }
@@ -21,7 +21,7 @@ class Activities {
     postActivities(payload){
         return cy.request({
             method: 'POST',
-            url: 'Activities',
+            url: `${Cypress.env('fakerRestApi')}/Activities`,
             failOnStatusCode: false,
             body: payload
         });
@@ -30,7 +30,7 @@ class Activities {
     putActivities(idActivities, payload){
         return cy.request({
             method: 'PUT',
-            url: `Activities/${idActivities}`,
+            url: `${Cypress.env('fakerRestApi')}/Activities/${idActivities}`,
             failOnStatusCode: false,
             body: payload
         });
@@ -39,7 +39,7 @@ class Activities {
     deleteActivities(idActivities){
         return cy.request({
             method: 'DELETE',
-            url: `Activities/${idActivities}`,
+            url: `${Cypress.env('fakerRestApi')}/Activities/${idActivities}`,
             failOnStatusCode: false,
         });
     }

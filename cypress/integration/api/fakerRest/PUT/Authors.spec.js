@@ -1,5 +1,5 @@
-import Authors from "../requests/Authors.request";
-const payload = require("../fixtures/Authors/PUT/putAuthor.json");
+import Authors from "../../../../support/requests/fakerRest/Authors";;
+const payload = require("../../../../fixtures/api/fakerRest/Authors/PUT/putAuthor.json");
 
 
 describe("PUT - Endpoint Authors", () => {

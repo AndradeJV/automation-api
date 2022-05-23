@@ -1,0 +1,8 @@
+{
+    "loginDontUser": {
+        "password": "secret_sauce"
+    },
+    "loginDontPassword": {
+        "user": "standard_user"
+    }
+}

@@ -1,5 +1,5 @@
-import Activities from "../requests/Activities.request";
-const payload = require("../fixtures/Activities/PUT/putBook.json");
+import Activities from "../../../../support/requests/fakerRest/Activities";
+const payload = require("../../../../fixtures/api/fakerRest/Activities/PUT/putBook.json");
 
 
 describe("PUT - Endpoint Activities", () => {

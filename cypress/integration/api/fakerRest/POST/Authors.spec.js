@@ -1,5 +1,5 @@
-import Authors from "../requests/Authors.request";
-const payload = require("../fixtures/Authors/POST/postAuthor.json");
+import Authors from "../../../../support/requests/fakerRest/Authors";;
+const payload = require("../../../../fixtures/api/fakerRest/Authors/POST/postAuthor.json");
 
 
 describe("POST - Endpoint Authors", () => {

@@ -1,5 +1,10 @@
 {
-    "baseUrl": "https://fakerestapi.azurewebsites.net/api/v1/",
     "projectId": "x4byzp",
-    "video": false
+    "video": false,
+    "env": {
+        "automationPracticeWeb": "http://automationpractice.com/index.php",
+        "saucedemoWeb": "www.saucedemo.com",
+        "bookStoreApi": "https://bookstore.toolsqa.com/",
+        "fakerRestApi": "https://fakerestapi.azurewebsites.net/api/v1/"
+    }
 }
