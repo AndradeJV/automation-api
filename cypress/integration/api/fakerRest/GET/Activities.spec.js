@@ -1,7 +1,7 @@
-import Activities from "../requests/Activities.request";
+import Activities from "../../../../support/requests/fakerRest/Activities";
 
-const payloadAllActivities = require("../fixtures/Activities/GET/listAllActivities.json");
-const payloadActivity = require("../fixtures/Activities/GET/Activity.json");
+const payloadAllActivities = require("../../../../fixtures/api/fakerRest/Activities/GET/listAllActivities.json");
+const payloadActivity = require("../../../../fixtures/api/fakerRest/Activities/GET/Activity.json");
 
 
 describe('GET - Endpoint Activities', () => {

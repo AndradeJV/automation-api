@@ -1,8 +1,8 @@
-import Authors from "../requests/Authors.request";
+import Authors from "../../../../support/requests/fakerRest/Authors";;
 
-const payloadAllAuthors = require("../fixtures/Authors/GET/getAllAuthors.json");
-const payloadBookOfAuthor = require("../fixtures/Authors/GET/getBookOfAuthor.json");
-const payloadAAuthor = require("../fixtures/Authors/GET/getAuthor.json");
+const payloadAllAuthors = require("../../../../fixtures/api/fakerRest/Authors/GET/getAllAuthors.json");
+const payloadBookOfAuthor = require("../../../../fixtures/api/fakerRest/Authors/GET/getBookOfAuthor.json");
+const payloadAAuthor = require("../../../../fixtures/api/fakerRest/Authors/GET/getAuthor.json");
 
 
 describe('GET - Endpoint Authors', () => {

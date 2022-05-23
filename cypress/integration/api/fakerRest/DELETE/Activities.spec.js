@@ -1,5 +1,5 @@
-import Activities from "../requests/Activities.request";
-const payload = require("../fixtures/Activities/DELETE/deleteABook.json");
+import Activities from "../../../../support/requests/fakerRest/Activities";
+const payload = require("../../../../fixtures/api/fakerRest/Activities/DELETE/deleteABook.json");
 
 
 describe("DELETE - Endpoint Activities", () => {
